@@ -1,0 +1,37 @@
+:root {
+  --bg: #f6f7fb;
+  --card: #ffffff;
+  --text: #18212f;
+  --muted: #667085;
+  --line: #d9dee8;
+  --main: #315b8a;
+  --danger: #b42318;
+  --ok: #067647;
+}
+
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--text); font-family: Arial, Helvetica, sans-serif; }
+a { color: inherit; text-decoration: none; }
+.header { background: var(--main); color: white; padding: 18px 32px; display: flex; align-items: center; justify-content: space-between; }
+.header nav { display: flex; gap: 14px; flex-wrap: wrap; }
+.header a { font-weight: 600; }
+.container { max-width: 1150px; margin: 0 auto; padding: 28px; }
+.card { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 20px; margin-bottom: 18px; box-shadow: 0 8px 20px rgba(15, 23, 42, 0.06); }
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 14px; }
+.actions { display: flex; gap: 10px; flex-wrap: wrap; align-items: end; }
+label { display: grid; gap: 6px; font-weight: 600; font-size: 14px; }
+input, select, textarea { width: 100%; padding: 10px; border: 1px solid var(--line); border-radius: 9px; font: inherit; background: white; }
+button, .button { border: 0; border-radius: 9px; padding: 10px 14px; background: var(--main); color: white; font-weight: 700; cursor: pointer; }
+button.secondary, .button.secondary { background: #475467; }
+button.danger { background: var(--danger); }
+table { width: 100%; border-collapse: collapse; background: white; }
+th, td { padding: 12px; border-bottom: 1px solid var(--line); text-align: left; vertical-align: top; }
+th { background: #eef2f7; }
+.badge { display: inline-block; padding: 4px 8px; border-radius: 999px; font-size: 12px; font-weight: 700; }
+.badge.ok { background: #dcfae6; color: var(--ok); }
+.badge.no { background: #fee4e2; color: var(--danger); }
+.notice { padding: 10px; border-radius: 10px; margin: 10px 0; background: #fff7d6; color: #704f00; }
+.error { padding: 10px; border-radius: 10px; margin: 10px 0; background: #fee4e2; color: var(--danger); }
+.small { color: var(--muted); font-size: 14px; }
+.hero { display: grid; gap: 8px; }
+.hero h1 { margin: 0; font-size: 36px; }

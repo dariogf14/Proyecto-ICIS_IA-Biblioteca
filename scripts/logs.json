@@ -1,0 +1,17 @@
+[
+  {
+    "action": "crear",
+    "entity": "libro",
+    "detail": "Carga inicial de libros"
+  },
+  {
+    "action": "crear",
+    "entity": "socio",
+    "detail": "Carga inicial de socios"
+  },
+  {
+    "action": "revision",
+    "entity": "sistema",
+    "detail": "Aplicacion preparada para pruebas"
+  }
+]
